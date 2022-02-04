@@ -21,8 +21,8 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - django >=2.0.13
-    - pydantic >=1.6,<1.9
+    - django >=2.2
+    - pydantic >=1.6,<2.0.0
     - python >=3.6
     - python-tzdata
 
