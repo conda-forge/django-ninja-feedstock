@@ -1,5 +1,5 @@
 {% set name = "django-ninja" %}
-{% set version = "0.16.2" %}
+{% set version = "0.17.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-ninja-{{ version }}.tar.gz
-  sha256: 288f44d183df4543040a660e7bc236b5aed50c4f1fb332fcdd7f3c9fd59a7f86
+  sha256: f6e80cbfd67de0c6fbf8fa2948f194a1ac375b67c43d6a79808d325abba94eb5
 
 build:
   number: 0
@@ -21,8 +21,8 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - django >=2.0.13
-    - pydantic >=1.6,<1.9
+    - django >=2.2
+    - pydantic >=1.6,<2.0.0
     - python >=3.6
     - python-tzdata
 
