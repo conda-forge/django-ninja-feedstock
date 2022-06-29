@@ -1,5 +1,5 @@
 {% set name = "django-ninja" %}
-{% set version = "0.18.0" %}
+{% set version = "0.19.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-ninja-{{ version }}.tar.gz
-  sha256: e8b9edfa731580d49bdd85dc12570bb48bfbad4f2fb97218d00496b470ec5830
+  sha256: a639ee282edffe36f194f8f94622f31c0e80ab210e9cf958d586174737f4ed5e
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - flit
+    - flit-core >=2,<4
     - pip
     - python >=3.6
   run:
