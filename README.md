@@ -1,11 +1,11 @@
-About django-ninja
-==================
+About django-ninja-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-ninja-feedstock/blob/main/LICENSE.txt)
 
 Home: https://django-ninja.rest-framework.com
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-ninja-feedstock/blob/main/LICENSE.txt)
 
 Summary: Django Ninja - Fast Django REST framework
 
