@@ -1,5 +1,5 @@
 {% set name = "django-ninja" %}
-{% set version = "0.22.2" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 913ebde7571d6a6968c9ac0b9e8a24680c46444d44fdd552f8831dbeede1292c
+  sha256: 88d85f7807042dcef712bc058d56b031445ea906dd804f86457f6bdd7873b0cd
 
 build:
   number: 0
@@ -19,11 +19,11 @@ requirements:
   host:
     - flit-core >=2,<4
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - django >=2.2
-    - pydantic >=1.6,<2.0.0
-    - python >=3.6
+    - pydantic >=2.0,<3.0.0
+    - python >=3.7
     - python-tzdata
 
 test:
