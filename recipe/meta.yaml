@@ -19,11 +19,11 @@ requirements:
   host:
     - flit-core >=2,<4
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - django >=2.2
-    - pydantic >=1.6,<2.0.0
-    - python >=3.6
+    - pydantic >=2.0,<3.0.0
+    - python >=3.7
     - python-tzdata
 
 test:
