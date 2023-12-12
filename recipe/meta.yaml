@@ -21,10 +21,9 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - django >=2.2
+    - django >=3.1
     - pydantic >=2.0,<3.0.0
     - python >=3.7
-    - python-tzdata
 
 test:
   commands:
