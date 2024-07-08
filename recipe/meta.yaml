@@ -1,5 +1,5 @@
 {% set name = "django-ninja" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0a7b7e20202f50546ae45af6a262fccb606c9e75b8bbe9fe38d49075a9435bf0
+  sha256: 667ff27304039d4692421709ae532fd62b16a4d34a969ef850d5cd22cb46090a
 
 build:
   number: 0
