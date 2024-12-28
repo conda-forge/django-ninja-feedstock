@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 5b320e2dc0f41a6032bfa7e1ebc33559ae1e911a426f0c6be6674a50b20819be
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,11 +19,11 @@ requirements:
   host:
     - flit-core >=2,<4
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - django >=3.1
     - pydantic >=2.0,<3.0.0
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   commands:
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://django-ninja.rest-framework.com
