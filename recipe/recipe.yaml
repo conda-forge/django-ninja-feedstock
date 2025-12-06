@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-ninja
-  version: "1.5.0"
+  version: "1.5.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 181bc8266a684be8c4cdd8f555d8ccbbc72e9fad86a5928ddccdd13faf73a1c5
+  sha256: 6acda68a64d60934c6fdccb4d97c3ac7f02cfefd78a5d87ae053effe081b17c7
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
     - python ${{ python_min }}.*
   run:
-    - django >=3.1,<6.0
+    - django >=3.1,<6.1
     - pydantic >=2.0,<3.0.0
     - python >=${{ python_min }}
 
