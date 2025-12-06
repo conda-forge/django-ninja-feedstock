@@ -23,7 +23,7 @@ requirements:
     - pip
     - python ${{ python_min }}.*
   run:
-    - django >=3.1,<6.0
+    - django >=3.1,<6.1
     - pydantic >=2.0,<3.0.0
     - python >=${{ python_min }}
 
