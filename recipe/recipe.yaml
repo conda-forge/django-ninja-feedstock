@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-ninja
-  version: "1.5.1"
+  version: "1.5.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 6acda68a64d60934c6fdccb4d97c3ac7f02cfefd78a5d87ae053effe081b17c7
+  sha256: 1554bebc28e9bbc8412f49bae4698937781b54d828c84af30c40dfced407b8cb
 
 build:
   number: 0
