@@ -15,10 +15,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14947&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/django-ninja-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/django-ninja-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/django-ninja-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -41,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `django-ninja` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install django-ninja
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install django-ninja
 ```
 
-It is possible to list all of the versions of `django-ninja` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add django-ninja
+# for installing globally
+pixi global install django-ninja
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `django-ninja` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search django-ninja --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search django-ninja --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search django-ninja --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -77,6 +120,8 @@ mamba repoquery whoneeds django-ninja --channel conda-forge
 # List dependencies of `django-ninja`:
 mamba repoquery depends django-ninja --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
